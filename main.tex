@@ -2,7 +2,9 @@
 % available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
-\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage[margin=0cm, a4paper]{geometry}
+\usepackage{paracol}
+\usepackage{changepage}
 
 
 %------------------------------------------------------------------ Variablen
@@ -15,7 +17,7 @@
 %------------------------------------------------------------------
 \title{Hipster-CV}
 \author{\LaTeX{} Ninja}
-\date{March 2019}
+\date{May 2023}
 
 \pagestyle{empty}
 \begin{document}
@@ -28,7 +30,7 @@
 
 
 
-\header{\bg{headerfontbox}{headerfontboxfont}{Captain} }{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Jack Sparrow}}{\bg{headerfontbox}{headerfontboxfont}{\large Pirate}}{jack.jpg}{headerblue}{3.5cm}{2cm}
+\header{}{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Juan Toca Mateo}}{\bg{headerfontbox}{headerfontboxfont}{\large Software Engineer}}{resources/avatar.jpg}{headerblue}{3.5cm}{2cm}
 
 
 
@@ -36,10 +38,11 @@
 
 % hier muss die "unsichtbare" Überschrift rein, weil er sonst nicht die Paracols startet... komisch...
 \subsection*{}
+
 \vspace{4em}
 
 \setlength{\columnsep}{1.5cm}
-\columnratio{0.3}[0.65]
+\columnratio{0.34}[0.65]
 \begin{paracol}{2}
 \hbadness5000
 %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
@@ -51,21 +54,23 @@
 
 \footnotesize
 {\setasidefontcolour
+\begin{adjustwidth}{1cm}{0cm} 
 \bgupper{cvgreen}{white}{Facts} \\
 \bg{cvgreen}{white}{personal} \\
 
 \begin{tabular}{ll}
-\faMale&Jack Sparrow \\
-\faGlobe& nationality: English  \\
-\faBirthdayCake&1690 \\
-\faMapMarker&on a ship \\
+\faMale&Juan Toca Mateo \\
+\faGlobe& nationality: Spanish \\
+\faBirthdayCake&1998 \\
+\faMapMarker&Santander, Spain \\
+\faEnvelopeO & juantocamateo17@gmail.com \\
 \end{tabular}
 
 \bigskip
 
 \bg{cvgreen}{white}{Areas of specialization} \\
 
-Privateering ~•~ Bucaneering ~•~ Parler
+Python ~•~ Artificial Vision ~•~ Microservices
 
 \bigskip
 
@@ -76,8 +81,8 @@ Privateering ~•~ Bucaneering ~•~ Parler
 
 \begin{minipage}[t]{\leftcolwidth}
 \begin{tabular}{l | ll}
-\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
-\textbf{French} & C2 & \pictofraction{\faCircle}{cvpurple}{3}{black!30}{1}{\tiny}
+\textbf{Spanish} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+\textbf{English} & B2 & \pictofraction{\faCircle}{cvpurple}{3}{black!30}{1}{\tiny}
 \end{tabular}
 \end{minipage}
 
@@ -87,19 +92,19 @@ Privateering ~•~ Bucaneering ~•~ Parler
 
 \bubblediagram{{\textbf{a pirate's} \\\textbf{life}},  the sea, pillaging, plundering, ships, stealing, hijacking, \textbf{The Black}\\ \textbf{Pearl}}
 
-\hspace{3cm} \color{labelcolour}{OS:} \hspace{0.5em}\icon{\faWindows}{labelcolour}{\Large} \hspace{0.5em} \icon{\faLinux}{labelcolour}{\Large} 
+%\hspace{3cm} \color{labelcolour}{OS:} \hspace{0.5em}\icon{\faWindows}{labelcolour}{\Large} \hspace{0.5em} \icon{\faLinux}{labelcolour}{\Large} 
 \bigskip
 
 \bg{cvgreen}{white}{IT \& programming} \\
 
 \begin{minipage}[t]{0.3\textwidth}
 \begin{tabular}{r @{\hspace{0.5em}}l}
-     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
-     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
-     \bg{skilllabelcolour}{iconcolour}{xslt} & \barrule{0.5}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Python} &  \barrule{0.55}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{Pytorch} & \barrule{0.44}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Tensorflow} & \barrule{0.44}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Databases} & \barrule{0.3}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Docker/K8S} & \barrule{0.3}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Linux} & \barrule{0.20}{0.5em}{cvgreen} \\
 \end{tabular}
 
 
@@ -109,13 +114,14 @@ Privateering ~•~ Bucaneering ~•~ Parler
 
 \bigskip
 
-\scalebox{0.8}{
-\iconcross{\Huge}{white}{cvred}{\color{black!30}\faBook}{\href{mailto:the.latex.ninja@gmail.com}{\faEnvelopeO}}{\faPhone}{\faCode}
-}
+%\scalebox{0.8}{
+%\iconcross{\Huge}{white}{cvred}{\color{black!30}\faBook}{\href{mailto:the.latex.ninja@gmail.com}{\faEnvelopeO}}{\faPhone}{\faCode}
+%}
 
 \phantom{turn the page}
 
 \phantom{turn the page}
+\end{adjustwidth}
 }
 %-----------------------------------------------------------
 \switchcolumn
@@ -178,27 +184,6 @@ Privateering ~•~ Bucaneering ~•~ Parler
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
     Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
 \end{tabular}
-\end{minipage}
-
-
-
-
-
-
-
-
-
-\vfill{} % Whitespace before final footer
-
-%----------------------------------------------------------------------------------------
-%	FINAL FOOTER
-%----------------------------------------------------------------------------------------
-\setlength{\parindent}{0pt}
-\begin{minipage}[t]{\rightcolwidth}
-\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small Jack Sparrow \icon{\faEnvelopeO}{cvpurple}{} The Black Pearl \icon{\faMapMarker}{cvpurple}{} Tortuga \icon{\faPhone}{cvpurple}{} 0099/333 5647380 \newline\icon{\faAt}{cvpurple}{} \protect\url{jack@sparrow.com}
-}
-\end{center}
 \end{minipage}
 
 
