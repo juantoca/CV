@@ -31,7 +31,7 @@
 
 
 
-\header{}{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Juan Toca Mateo}}{\bg{headerfontbox}{headerfontboxfont}{\large Python AI Software Engineer}}{resources/avatar.jpg}{headerblue}{3.5cm}{2cm}
+\header{}{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Juan Toca Mateo}}{\bg{headerfontbox}{headerfontboxfont}{\large AI Backend Engineer}}{resources/avatar.jpg}{headerblue}{3.5cm}{2cm}
 
 
 
@@ -72,14 +72,13 @@
 
 \bg{cvgreen}{white}{Areas of specialization} \\
 
-Python ~•~ Artificial Vision ~•~ Microservices
+Python ~•~ Machine Learning ~•~ Microservices
 
 \bigskip
 
 \bgupper{cvgreen}{white}{Skills} \\
 \bg{cvgreen}{white}{Languages}
 \bigskip
-
 
 \begin{minipage}[t]{\leftcolwidth}
 \begin{tabular}{l | ll}
@@ -90,24 +89,50 @@ Python ~•~ Artificial Vision ~•~ Microservices
 
 \bigskip
 
-\bg{cvgreen}{white}{Interests}\\
+\bg{cvgreen}{white}{Python ecosystem} \\
 
-\bubblediagram{{\textbf{an engineer's} \\\textbf{life}}, coding, system \\administration, problems\\to solve, computer\\vision, open source, learning}
+\renewcommand{\arraystretch}{1.5}
 
-%\hspace{3cm} \color{labelcolour}{OS:} \hspace{0.5em}\icon{\faWindows}{labelcolour}{\Large} \hspace{0.5em} \icon{\faLinux}{labelcolour}{\Large} 
-\bigskip
-
-\bg{cvgreen}{white}{IT \& programming} \\
-
-\begin{minipage}[t]{0.3\textwidth}
-\begin{tabular}{r @{\hspace{0.5em}}l}
-     \bg{skilllabelcolour}{iconcolour}{Python} &  \barrule{0.55}{0.5em}{cvpurple}\\
-     \bg{skilllabelcolour}{iconcolour}{Pytorch} & \barrule{0.44}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{Tensorflow} & \barrule{0.44}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{Databases} & \barrule{0.3}{0.5em}{cvgreen} \\
-     \bg{skilllabelcolour}{iconcolour}{Docker/K8S} & \barrule{0.3}{0.5em}{cvgreen} \\
-     \bg{skilllabelcolour}{iconcolour}{Linux} & \barrule{0.20}{0.5em}{cvgreen} \\
+\begin{minipage}[t]{0.3\textwidth} 
+\begin{tabular}{>{\centering\arraybackslash}p{6.0em}>{\centering\arraybackslash}p{6.0em}>{\centering\arraybackslash}p{6.0em}}
+    \textbf{Pytest} & \textbf{MyPy} & \textbf{FastAPI}\\
+    \textbf{Pydantic} & \textbf{SQLAlchemy} & \textbf{Hypothesis} \\
 \end{tabular}
+
+
+\bigskip
+\bg{cvgreen}{white}{Developer tooling} \\
+
+
+\begin{tabular}{>{\centering\arraybackslash}p{6.0em}>{\centering\arraybackslash}p{6.0em}>{\centering\arraybackslash}p{6.0em}}
+    \textbf{Git} & \textbf{Pre-Commit} & \textbf{GH Actions}\\
+    \textbf{Bash} & \textbf{JIRA} & \textbf{Confluence}\\
+    \textbf{VSCode} & \textbf{Opsgenie} & \textbf{Jetbrains}\\
+    & \textbf{Sonar Cloud} &
+\end{tabular}
+
+
+
+\bigskip
+\bg{cvgreen}{white}{Cloud development/Services} \\
+
+\begin{tabular}{>{\centering\arraybackslash}p{6.0em}>{\centering\arraybackslash}p{6.0em}>{\centering\arraybackslash}p{6.0em}}
+    \textbf{Docker} & \textbf{Kubernetes} & \textbf{Helm Charts}\\
+    \textbf{Datadog} & \textbf{Grafana} & \textbf{Terraform} \\
+    \textbf{Flux} & \textbf{Azure} & \textbf{Airflow} \\ 
+    \textbf{PostgreSQL} & \textbf{SQLite} & \textbf{Redis} \\ 
+\end{tabular}
+
+\bigskip
+\bg{cvgreen}{white}{Artificial Intelligence} \\
+
+\begin{tabular}{>{\centering\arraybackslash}p{6.0em}>{\centering\arraybackslash}p{6.0em}>{\centering\arraybackslash}p{6.0em}}
+    \textbf{Tensorflow} & \textbf{Pytorch} & \textbf{Scikit learn}\\
+    \textbf{CUDA} & \textbf{Deep Learning} & \textbf{LLM} \\
+    & \textbf{OpenCV} & \\
+\end{tabular}
+
+\bigskip
 
 
 %\dashrule{}{}
@@ -131,78 +156,53 @@ Python ~•~ Artificial Vision ~•~ Microservices
 \small
 \section*{Work Experience}
 
-\begin{tabular}{r| p{0.35\textwidth} c}
-    \cvevent{2022-Ongoing}{Sony Semiconductors Group}{AI Software Engineeer}{Barcelona, Spain \color{cvred}}{Building the training service for \href{https://www.aitrios.sony-semicon.com/en/}{AITRIOS}}{resources/sony_logo.png} \\
+\begin{tabular}{r p{0.45\textwidth}}
+    \cvevent{2022-\the\year{}}{Sony Semiconductors Group}{AI Backend Engineeer}{Barcelona, Spain \color{cvred}}{Built the training service for \href{https://www.aitrios.sony-semicon.com/en/}{AITRIOS}}{resources/sony_logo.png} 
+    \begin{footnotesize}
+    \begin{itemize}
+        \item Developed a microservice from the ground up, including creating a Helm chart, configuring Flux and Datadog
+        \item Took care of designing and mantaining CI/CD pipelines with GH Actions  
+    \end{itemize}
+\end{footnotesize}
+    \\
     \cvevent{2021-2022}{Siali Technologies}{AI Engineer}{Santander, Spain \color{cvred}}{Trained AI models for detection of faulty parts}{resources/siali_logo.jpg} \\
 \end{tabular}
 
-\vspace{4em}
-
-\begin{minipage}[t]{0.4\textwidth}
 \section*{Education}
 \begin{tabular}{r p{0.6\textwidth} c}
-    \cvdegree{2020}{Computer Science}{Certified}{Cantabria Uni \color{headerblue}}{}{resources/UC_logo.png} \\
+    \cvdegree{2016 - 2020}{Degree in Computer Science}{Certified}{Cantabria Uni \color{headerblue}}{}{resources/UC_logo.png} \\
 \end{tabular}
 \section*{Certificates}
 \begin{tabular}{r p{0.62\textwidth} c}
+    \cvdegree{2024}{Introduction to frontend development}{Certified}{Meta \color{headerblue}}{}{resources/cambridge_logo.png} \\
     \cvdegree{2019}{B2 English Proficiency}{Certified}{Cambridge Uni \color{headerblue}}{}{resources/cambridge_logo.png} \\
 \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.16\textwidth}
-\section*{Hobbies}
-% usage \hobbyicon{<fontawesome icon}{Text}{background color of circle}{size of icon}{space text below icon}
-\hobbyicon{\color{iconcolour}\includegraphics[height=0.7cm]{resources/hiking_emoji.png}}{Hiking}{cvgreen}{\iconsize}{2em} \hspace{0.7em}
-\hobbyicon{\color{iconcolour}\faBook}{Learning}{cvpurple}{\iconsize}{2em}
-
-\hobbyicon{\color{iconcolour}\faPaperPlane}{Travel}{cvpurple}{\iconsize}{2em} \hfill
-\hobbyicon{\color{iconcolour}\faMedkit}{Voluntering}{headerblue}{\iconsize}{2em}
-\end{minipage}
 
 %\vspace{4em}
+\section*{Impact}
+\begin{tabular}{r p{0.45\textwidth} c}
+\bigskip
+\cvimpact{2023-2024}{Sony Semiconductors Group}{Took care of refactoring a legacy system to improve it's quality and performance. Reduced latency in half and increased throughput as well as improving it maintenance through implementing tests, type hints and observability tools. }\\    
+\bigskip
+\cvimpact{2022-2023}{Sony Semiconductors Group}{Developed an AI training microservice. Taking responsability of setting up all the deployment infraestructure (Helm charts, flux and company's Terraform modification) and operating it (defining Datadog SLOs, metrics and dashboards and setting up Opsgenie alerts).}\\
+\bigskip
+\cvimpact{2021-2022}{Siali Technologies}{Trained several deep learning models to save costs on visual inspection tasks in the automative sector} \\
+\bigskip
+\cvimpact{2021-2022}{Siali Technologies}{Developed a visual inspection system for measuring sub-milimetric distances for quality assurance} \\
+
+\end{tabular}
 
 \section*{Open Source Contributions}
 
-\begin{tabular}{r p{0.5\textwidth} c}
+\begin{tabular}{r p{0.55\textwidth} c}
 
+\bigskip
 \cvopensource{2022}{Read The Docs}{Reported and fixed a misleading documentation entry}{https://github.com/readthedocs/readthedocs.org/issues/9771}\\
+\bigskip
 \cvopensource{2022}{Darknet}{Fixed a bug on the Python training script}{https://github.com/AlexeyAB/darknet/pull/7566}\\
 
 \end{tabular}
 
-\section*{Work impact}
-\begin{tabular}{r p{0.5\textwidth} c}
-\cvimpact{2022}{Sony Semiconductors Group}{Improved the CI/CD workflows to be more maintainable and faster. This lead to a time save in the release process.}\\
-\cvimpact{2022}{Sony Semiconductors Group}{Gave useful help to customer support about the training service. This lead to an increase in customer satisfaction and understanding of AI.}\\
-\cvimpact{2021}{Siali Technologies}{Developed a submilimetric measurement vision system that allowed to automatize a quality check on a production line} \\
-\cvimpact{2021}{Siali Technologies}{Trained several deep learning models to save costs on visual inspection tasks}
-
-\end{tabular}
-
-\section*{Other skills}
-\cvtag{Azure}
-\cvtag{Keras}
-\cvtag{Testing}
-\cvtag{CI/CD}
-\cvtag{Agile}
-\cvtag{Jira}
-\cvtag{Git}
-\cvtag{CUDA}
-\cvtag{Jetson Platform}
-\cvtag{Godot}
-\cvtag{Blender}
-\cvtag{Kubernetes}
-\cvtag{Helm}
-\cvtag{Flux}
-\cvtag{Airflow}
-\cvtag{Artificial inteligence(AI)}
-\cvtag{Machine Learning(ML)}
-\cvtag{GNU/Linux}
-\cvtag{PostgreSQL}
-\cvtag{SQLAlchemy}
-\cvtag{SQLite}
-\cvtag{FastAPI}
-\cvtag{\LaTeX}
-\hfill
 
 \end{paracol}
 
